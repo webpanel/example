@@ -8649,9 +8649,9 @@ webpack@3.8.1:
     webpack-sources "^1.0.1"
     yargs "^8.0.2"
 
-"webpanel-antd@https://github.com/webpanel/antd.git":
-  version "0.0.11"
-  resolved "https://github.com/webpanel/antd.git#d7d4c82a07e137db97a3dc3009c73a0d948b1752"
+webpanel-antd@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/webpanel-antd/-/webpanel-antd-0.0.12.tgz#d119946b6a9de20715d9770cfcf52c2d8cbc304d"
   dependencies:
     "@types/jest" "^23.1.1"
     "@types/jsonwebtoken" "^7.2.7"
@@ -8672,9 +8672,9 @@ webpack@3.8.1:
     react-dom "^16.4.1"
     react-router-dom "^4.3.1"
 
-"webpanel-auth@https://github.com/webpanel/auth.git":
-  version "0.0.12"
-  resolved "https://github.com/webpanel/auth.git#b48a94d5ba36a3dc52ea5e5d0faa574466b381cd"
+webpanel-auth@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/webpanel-auth/-/webpanel-auth-0.0.13.tgz#a91b990a9de056ed09ad828bcc954e2c56c329a9"
   dependencies:
     "@types/jsonwebtoken" "^7.2.7"
     "@types/lodash" "^4.14.109"
@@ -8686,9 +8686,9 @@ webpack@3.8.1:
     node-fetch "^2.1.2"
     react "*"
 
-"webpanel-data@https://github.com/webpanel/data.git":
-  version "0.0.15"
-  resolved "https://github.com/webpanel/data.git#2bf2d6a63e0ee170b02889a4acc6d82bc454c0ea"
+webpanel-data@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/webpanel-data/-/webpanel-data-0.0.18.tgz#7f2e45c99f9404ac566523cf193d8e8c8a785973"
   dependencies:
     "@types/inflection" "^1.5.28"
     "@types/lodash" "^4.14.110"
