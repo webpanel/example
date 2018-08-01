@@ -21,5 +21,5 @@ const connector = new Connector({
 export const api = new DataSource(
   'api',
   connector,
-  'http://jsonplaceholder.typicode.com/'
+  'https://jsonplaceholder.typicode.com/'
 );
