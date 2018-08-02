@@ -2,13 +2,15 @@ import * as React from 'react';
 import { Layout, LoginForm, RouteComponentProps } from 'webpanel-antd';
 import { AuthContentProps, AuthFormProps, DummyAuth } from 'webpanel-auth';
 
+import { todos } from './pages/todos';
 import { users } from './pages/users';
 
 const layout = (props: AuthContentProps) => (
   <Layout
     menu={[
       <Layout.MenuItem key="/" title="Dashboard" icon="exclamation-circle-o" />,
-      <Layout.MenuItem key="/users/" title="Users" icon="user" />
+      <Layout.MenuItem key="/users/" title="Users" icon="user" />,
+      <Layout.MenuItem key="/todos/" title="Todos" icon="user" />
     ]}
     structure={[
       <Layout.StructureItem
@@ -23,7 +25,8 @@ const layout = (props: AuthContentProps) => (
           return `This is detail page for user ${route.match.params.id}`;
         }}
         name="Users"
-      />
+    />,
+    <Layout.StructureItem key="/todos" name="Todos" content={todos} />,
     ]}
     logout={props.logout}
   />

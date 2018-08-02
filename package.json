@@ -5,14 +5,17 @@
   "main": "src/index.tsx",
   "dependencies": {
     "@types/react-router-dom": "^4.2.7",
+    "@types/recharts": "^1.0.25",
     "mobx": "^5.0.3",
     "mobx-react": "^5.2.3",
     "react": "16.4.1",
     "react-dom": "^16.4.0",
     "react-scripts-ts": "2.16.0",
+    "recharts": "^1.1.0",
     "webpanel-antd": "0.0.13",
     "webpanel-auth": "0.0.13",
-    "webpanel-data": "0.0.19"
+    "webpanel-data": "0.0.19",
+    "webpanel-recharts": "https://github.com/webpanel/recharts.git#develop"
   },
   "scripts": {
     "start": "react-scripts-ts start",
