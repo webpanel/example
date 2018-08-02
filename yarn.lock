@@ -8649,9 +8649,9 @@ webpack@3.8.1:
     webpack-sources "^1.0.1"
     yargs "^8.0.2"
 
-webpanel-antd@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/webpanel-antd/-/webpanel-antd-0.0.12.tgz#d119946b6a9de20715d9770cfcf52c2d8cbc304d"
+webpanel-antd@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/webpanel-antd/-/webpanel-antd-0.0.13.tgz#82ca536092ba00ca19d19459dc48669993f5b46a"
   dependencies:
     "@types/jest" "^23.1.1"
     "@types/jsonwebtoken" "^7.2.7"
@@ -8686,9 +8686,9 @@ webpanel-auth@0.0.13:
     node-fetch "^2.1.2"
     react "*"
 
-webpanel-data@^0.0.18:
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/webpanel-data/-/webpanel-data-0.0.18.tgz#7f2e45c99f9404ac566523cf193d8e8c8a785973"
+webpanel-data@0.0.19:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/webpanel-data/-/webpanel-data-0.0.19.tgz#1f03344d1231db48fe94cbacfc9a054e401203fb"
   dependencies:
     "@types/inflection" "^1.5.28"
     "@types/lodash" "^4.14.110"
