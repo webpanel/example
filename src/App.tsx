@@ -4,13 +4,14 @@ import { AuthContentProps, AuthFormProps, DummyAuth } from 'webpanel-auth';
 
 import { charts } from './pages/charts';
 import { users } from './pages/users';
+import { userDetail } from './pages/users-detail';
 
 const layout = (props: AuthContentProps) => (
   <Layout
     menu={[
       <Layout.MenuItem key="/" title="Dashboard" icon="exclamation-circle-o" />,
       <Layout.MenuItem key="/users/" title="Users" icon="user" />,
-      <Layout.MenuItem key="/charts/" title="Charts" icon="line-chart" />,
+      <Layout.MenuItem key="/charts/" title="Charts" icon="line-chart" />
     ]}
     structure={[
       <Layout.StructureItem
@@ -22,11 +23,11 @@ const layout = (props: AuthContentProps) => (
       <Layout.StructureItem
         key="/users/:id"
         content={(route: RouteComponentProps<any>) => {
-          return `This is detail page for user ${route.match.params.id}`;
+          return userDetail(route.match.params.id);
         }}
         name="Users"
       />,
-      <Layout.StructureItem key="/charts" name="Charts" content={charts} />,
+      <Layout.StructureItem key="/charts" name="Charts" content={charts} />
     ]}
     logout={props.logout}
   />

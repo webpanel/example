@@ -8749,9 +8749,9 @@ webpack@3.8.1:
     webpack-sources "^1.0.1"
     yargs "^8.0.2"
 
-webpanel-antd@0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/webpanel-antd/-/webpanel-antd-0.0.13.tgz#82ca536092ba00ca19d19459dc48669993f5b46a"
+webpanel-antd@0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/webpanel-antd/-/webpanel-antd-0.0.14.tgz#60ce87d855c40f635f56113845caa1a15c2d34f2"
   dependencies:
     "@types/jest" "^23.1.1"
     "@types/jsonwebtoken" "^7.2.7"
