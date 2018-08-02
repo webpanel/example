@@ -16,7 +16,10 @@ export const charts = (
         <Card title="Line Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceLineChart resourceCollection={resource}>
-              <Line type="monotone" dataKey={data => data.title.length} />
+              <Line
+                type="monotone"
+                dataKey={(data: any) => data.title.length}
+              />
               <XAxis dataKey="title" hide={true} />
               <Tooltip />
             </ResourceLineChart>
@@ -26,7 +29,7 @@ export const charts = (
         <Card title="Area Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceAreaChart resourceCollection={resource}>
-              <Area type="step" dataKey={data => data.title.length} />
+              <Area type="step" dataKey={(data: any) => data.title.length} />
               <XAxis dataKey="title" hide={true} />
               <Tooltip />
             </ResourceAreaChart>

@@ -2,18 +2,6 @@
 # yarn lockfile v1
 
 
-"@antv/adjust@~0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antv/adjust/-/adjust-0.0.6.tgz#16db3000dd315607acda8f6968caf7b58c36f3a8"
-  dependencies:
-    "@antv/util" "~1.0.11"
-
-"@antv/attr@~0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@antv/attr/-/attr-0.0.6.tgz#5b3886512cd290c1bd179e9613f3197243dc0557"
-  dependencies:
-    "@antv/util" "~1.0.11"
-
 "@antv/data-set@^0.8.0":
   version "0.8.9"
   resolved "https://registry.yarnpkg.com/@antv/data-set/-/data-set-0.8.9.tgz#019b3ec73a1309d57dfb379200b8ae02486fa613"
@@ -36,59 +24,35 @@
     topojson-client "~3.0.0"
     wolfy87-eventemitter "~5.1.0"
 
-"@antv/g2-plugin-slider@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@antv/g2-plugin-slider/-/g2-plugin-slider-2.0.1.tgz#45cf6da6f2050fabe64166a213674422afe4eebf"
+"@antv/g2-plugin-slider@^2.0.1":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@antv/g2-plugin-slider/-/g2-plugin-slider-2.0.3.tgz#34a298642a945be3f2f11703bc7a2b3fbc9b32bc"
 
-"@antv/g2@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@antv/g2/-/g2-3.2.5.tgz#35282c37e6ff34f7e63495b9852a468aa085af01"
+"@antv/g2@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@antv/g2/-/g2-3.1.2.tgz#d3345dcaa871f4a5a37f38dee249342a191fada0"
   dependencies:
-    "@antv/adjust" "~0.0.6"
-    "@antv/attr" "~0.0.6"
-    "@antv/g" "~3.0.0-beta.11"
-    "@antv/interaction" "~0.0.8"
-    "@antv/scale" "~0.0.4"
-    "@antv/util" "~1.0.12"
+    "@antv/g" "~2.0.7-beta.3"
+    fecha "~2.3.3"
+    gl-matrix "~2.6.1"
+    lodash "~4.17.5"
     venn.js "~0.2.20"
     wolfy87-eventemitter "~5.1.0"
 
-"@antv/g@^3.0.0-beta.11", "@antv/g@~3.0.0-beta.11":
-  version "3.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/@antv/g/-/g-3.0.0-beta.11.tgz#2469d5c1b00d5fd1403d3620cecb3bc1d4ed221e"
+"@antv/g@~2.0.7-beta.3":
+  version "2.0.7-beta.6"
+  resolved "https://registry.yarnpkg.com/@antv/g/-/g-2.0.7-beta.6.tgz#3fbf8346d0daa8a8d6246985b27270ebe46c09ba"
   dependencies:
-    "@antv/gl-matrix" "~2.7.1"
-    "@antv/util" "~1.0.11"
     d3-ease "~1.0.3"
     d3-interpolate "~1.1.5"
     d3-timer "~1.0.6"
+    gl-matrix "~2.3.2"
+    lodash "~4.17.4"
     wolfy87-eventemitter "~5.1.0"
-
-"@antv/gl-matrix@~2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@antv/gl-matrix/-/gl-matrix-2.7.1.tgz#acb8e37f7ab3df01345aba4372d7942be42eba14"
 
 "@antv/hierarchy@~0.1.0-beta.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@antv/hierarchy/-/hierarchy-0.1.2.tgz#d736fe5c4cf8ae664ba51bca194a1786c028ad9d"
-
-"@antv/interaction@~0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@antv/interaction/-/interaction-0.0.8.tgz#18bf1a7c8e87c96d7a989720d6471582c3aa859d"
-  dependencies:
-    "@antv/g" "^3.0.0-beta.11"
-    "@antv/util" "~1.0.11"
-
-"@antv/scale@~0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@antv/scale/-/scale-0.0.4.tgz#4e821c669b880659a8be644114f9b6681630c411"
-  dependencies:
-    "@antv/util" "~1.0.11"
-    fecha "~2.3.3"
-
-"@antv/util@~1.0.11", "@antv/util@~1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@antv/util/-/util-1.0.12.tgz#b55e921f30f1c8410f3e24a2d889e82568c3df38"
 
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.55"
@@ -105,8 +69,8 @@
     js-tokens "^3.0.0"
 
 "@babel/polyfill@^7.0.0-beta.36":
-  version "7.0.0-beta.54"
-  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.0.0-beta.54.tgz#b703ad310b57fa2291cb5b0ffd7c78a7dc52cc6c"
+  version "7.0.0-beta.55"
+  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.0.0-beta.55.tgz#fc68159a3a32f67d4003298ee69d3412622b5303"
   dependencies:
     core-js "^2.5.7"
     regenerator-runtime "^0.11.1"
@@ -122,20 +86,16 @@
     "@types/d3-path" "*"
 
 "@types/history@*":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.0.tgz#2fac51050c68f7d6f96c5aafc631132522f4aa3f"
 
 "@types/inflection@^1.5.28":
   version "1.5.28"
   resolved "https://registry.yarnpkg.com/@types/inflection/-/inflection-1.5.28.tgz#43d55e0d72cf333a2dffd9c4ec0407455a1b0931"
 
-"@types/jest@^23.0.0":
-  version "23.1.1"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.1.tgz#c54ab1a5f41aa693c0957222dd10414416d0c87b"
-
-"@types/jest@^23.1.1":
-  version "23.3.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.0.tgz#5dd70033b616a6228042244ebd992f6426808810"
+"@types/jest@^23.0.0", "@types/jest@^23.1.1":
+  version "23.3.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.1.tgz#a4319aedb071d478e6f407d1c4578ec8156829cf"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -148,8 +108,8 @@
     "@types/node" "*"
 
 "@types/lodash@^4.14.109", "@types/lodash@^4.14.110":
-  version "4.14.113"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.113.tgz#1d1cb063f17fec4cc46f1a90d978ebf441113061"
+  version "4.14.115"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.115.tgz#54d171b2ce12c058742443b5f6754760f701b8f9"
 
 "@types/node-fetch@^2.1.1":
   version "2.1.2"
@@ -158,8 +118,8 @@
     "@types/node" "*"
 
 "@types/node@*", "@types/node@^10.3.2":
-  version "10.3.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.5.tgz#8423cdf6e6fb83433e489900d7600d3b61c8260c"
+  version "10.5.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.5.tgz#8e84d24e896cd77b0d4f73df274027e3149ec2ba"
 
 "@types/react-broadcast@^0.6.0":
   version "0.6.0"
@@ -175,23 +135,23 @@
     "@types/react" "*"
 
 "@types/react-router-dom@^4.2.7":
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.2.7.tgz#9d36bfe175f916dd8d7b6b0237feed6cce376b4c"
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.3.0.tgz#c91796d02deb3a5b24bc1c5db4a255df0d18b8b5"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
     "@types/react-router" "*"
 
 "@types/react-router@*":
-  version "4.0.27"
-  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.27.tgz#553f54df7c4b09d6046b0201ce9b91c46b2940e3"
+  version "4.0.30"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.30.tgz#64bcd886befd1f932779b74d17954adbefb7a3a7"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@16.4.1":
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.1.tgz#c53bbfb4a78933db587da085ac60dbf5fcf73f8f"
+"@types/react@*", "@types/react@16.4.7":
+  version "16.4.7"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.7.tgz#f33f6d759a7e1833befa15224d68942d178a5a3f"
   dependencies:
     csstype "^2.2.0"
 
@@ -355,9 +315,9 @@ ant-design-pro@^1.2.1:
     rollbar "^2.3.4"
     url-polyfill "^1.0.10"
 
-antd@^3.6.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.7.1.tgz#e18fee3f54fe1c499cc848223fd3bd581d87ed00"
+antd@^3.6.1, antd@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.7.3.tgz#4f99b9aa23ab95d7b6ebb7405c25d80a8914f28c"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -379,7 +339,7 @@ antd@^3.6.1:
     rc-checkbox "~2.1.5"
     rc-collapse "~1.9.0"
     rc-dialog "~7.1.0"
-    rc-drawer "~1.5.9"
+    rc-drawer "~1.6.2"
     rc-dropdown "~2.2.0"
     rc-editor-mention "^1.0.2"
     rc-form "^2.1.0"
@@ -541,8 +501,10 @@ asn1.js@^4.0.0:
     minimalistic-assert "^1.0.0"
 
 asn1@~0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
+  dependencies:
+    safer-buffer "~2.1.0"
 
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
@@ -571,8 +533,8 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
 
 async-validator@1.x:
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.8.4.tgz#74c3a324161e6207f5c56cc1c66725b5c597e506"
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.8.5.tgz#dc3e08ec1fd0dddb67e60842f02c0cd1cec6d7f0"
   dependencies:
     babel-runtime "6.x"
 
@@ -1302,16 +1264,16 @@ binary-extensions@^1.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.11.0.tgz#46aa1751fb6a2f93ee5e689bb1087d4b14c6c205"
 
 bizcharts-plugin-slider@^2.0.1:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/bizcharts-plugin-slider/-/bizcharts-plugin-slider-2.0.3.tgz#ea560ed22f4bcdfdb5bf577ae6a4e3a2a45835d7"
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/bizcharts-plugin-slider/-/bizcharts-plugin-slider-2.0.4.tgz#456aac6f1638108278eed00953a7da482b571ef3"
   dependencies:
-    "@antv/g2-plugin-slider" "2.0.1"
+    "@antv/g2-plugin-slider" "^2.0.1"
 
 bizcharts@^3.1.3-beta.1:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/bizcharts/-/bizcharts-3.2.0.tgz#4b4d5b1ada5dc5c1cb06e08dc06478e857b051e8"
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/bizcharts/-/bizcharts-3.1.10.tgz#fefcc8b2457ebc144bf098abfbe8acf4f811a7ed"
   dependencies:
-    "@antv/g2" "3.2.5"
+    "@antv/g2" "3.1.2"
     invariant "^2.2.2"
     prop-types "^15.6.0"
     warning "^3.0.0"
@@ -1599,8 +1561,8 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000872.tgz#3f6e53b63d373768bf99e896133d66ef89c49999"
 
 caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000792:
-  version "1.0.30000865"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000865.tgz#70026616e8afe6e1442f8bb4e1092987d81a2f25"
+  version "1.0.30000872"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000872.tgz#aa1346ac88ed8dcdc7e372a42989bf9bea696f06"
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -2207,8 +2169,8 @@ cssstyle@^1.0.0:
     cssom "0.3.x"
 
 csstype@^2.2.0:
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.5.tgz#4125484a3d42189a863943f23b9e4b80fedfa106"
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -3460,6 +3422,14 @@ getpass@^0.1.1:
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
   dependencies:
     assert-plus "^1.0.0"
+
+gl-matrix@~2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-2.3.2.tgz#aac808c74af7d5db05fe04cb60ca1a0fcb174d74"
+
+gl-matrix@~2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-2.6.1.tgz#1bc7f7b396f4ae80abdb4db9a98cd07d170b9004"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -5033,7 +5003,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4.*, "lodash@>=3.5 <5", lodash@^4.11.1, lodash@^4.13.1, lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@~4.17.4:
+lodash@4.*, "lodash@>=3.5 <5", lodash@^4.11.1, lodash@^4.13.1, lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@~4.17.4, lodash@~4.17.5:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -6435,8 +6405,8 @@ rc-animate@2.x, rc-animate@^2.3.0, rc-animate@^2.4.1:
     prop-types "15.x"
 
 rc-animate@^3.0.0-rc.1:
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/rc-animate/-/rc-animate-3.0.0-rc.1.tgz#39703e5be6d35c0c50ae53126a6c2424e5ec9405"
+  version "3.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/rc-animate/-/rc-animate-3.0.0-rc.4.tgz#caddbd849f01d987965c6237afe64167679497bd"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -6504,9 +6474,9 @@ rc-drawer-menu@^0.5.0:
     classnames "^2.2.5"
     prop-types "^15.5.0"
 
-rc-drawer@~1.5.9:
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.5.9.tgz#e75662b2e27211d1401055fb97280591a7668d2d"
+rc-drawer@~1.6.2:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.6.3.tgz#f866b7fbde2d307b59cfd06c015ae697017db388"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -6682,8 +6652,8 @@ rc-switch@~1.6.0:
     prop-types "^15.5.6"
 
 rc-table@~6.2.2:
-  version "6.2.6"
-  resolved "https://registry.yarnpkg.com/rc-table/-/rc-table-6.2.6.tgz#2481d4eae6876dc4987df0614aa35be038e09a76"
+  version "6.2.8"
+  resolved "https://registry.yarnpkg.com/rc-table/-/rc-table-6.2.8.tgz#c06bf48bfab60754ab3f70102290e41e8b32388e"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -6744,8 +6714,8 @@ rc-tree-select@~2.0.5:
     warning "^4.0.1"
 
 rc-tree@~1.12.0, rc-tree@~1.12.2:
-  version "1.12.6"
-  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.12.6.tgz#53bd6a567b41418a125a6d8c129a8730698f1933"
+  version "1.12.7"
+  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.12.7.tgz#94ce4b59d27325c555d6238c7b92feeaa5d476a0"
   dependencies:
     babel-runtime "^6.23.0"
     classnames "2.x"
@@ -6850,8 +6820,8 @@ react-document-title@^2.0.3:
     react-side-effect "^1.0.2"
 
 react-dom@^16.4.0, react-dom@^16.4.1:
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.2.tgz#4afed569689f2c561d2b8da0b819669c38a0bda4"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -6990,18 +6960,18 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@*, react@16.4.1:
-  version "16.4.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
+react@*, react@^16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.4.2:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+react@16.4.1:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -7388,8 +7358,8 @@ rmc-feedback@^2.0.0:
     classnames "^2.2.5"
 
 rollbar@^2.3.4:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/rollbar/-/rollbar-2.4.2.tgz#44286aec383a49d7849da92b5b9e31999847cfc9"
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/rollbar/-/rollbar-2.4.4.tgz#ad1ddff08fd6739fdcdabdf22476de4e1c51de9f"
   dependencies:
     async "~1.2.1"
     console-polyfill "0.3.0"
@@ -7454,7 +7424,7 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0:
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
@@ -8804,8 +8774,9 @@ webpanel-data@0.0.19, webpanel-data@^0.0.19:
 
 "webpanel-recharts@https://github.com/webpanel/recharts.git#develop":
   version "0.0.1"
-  resolved "https://github.com/webpanel/recharts.git#4569a3f37356802362d29c8609647fb85129cc81"
+  resolved "https://github.com/webpanel/recharts.git#3faa4293334185aed53e7f8493031ff1704d8de9"
   dependencies:
+    antd "^3.7.3"
     react "^16.4.2"
     recharts "^1.1.0"
     webpanel-data "^0.0.19"
