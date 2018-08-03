@@ -5,6 +5,7 @@ import { ResourceCollection, ResourceCollectionLayer } from 'webpanel-data';
 import {
   ResourceAreaChart,
   ResourceBarChart,
+  ResourceComposedChart,
   ResourceLineChart
 } from 'webpanel-recharts';
 
@@ -50,6 +51,20 @@ export const charts = (
               <XAxis dataKey="title" hide={true} />
               <Tooltip />
             </ResourceBarChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Composed Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceComposedChart resourceCollection={resource}>
+              <Area
+                type="monotone"
+                dataKey={(data: any) => data.title.length * 2}
+              />
+              <Bar dataKey={(data: any) => data.title.length} />
+              <XAxis dataKey="title" hide={true} />
+              <Tooltip />
+            </ResourceComposedChart>
           </ResponsiveContainer>
         </Card>
       </>
