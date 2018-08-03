@@ -1,12 +1,22 @@
 import { Card } from 'antd';
 import * as React from 'react';
-import { Area, Bar, Line, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
+import {
+  Area,
+  Bar,
+  Line,
+  PolarGrid,
+  Radar,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis
+} from 'recharts';
 import { ResourceCollection, ResourceCollectionLayer } from 'webpanel-data';
 import {
   ResourceAreaChart,
   ResourceBarChart,
   ResourceComposedChart,
-  ResourceLineChart
+  ResourceLineChart,
+  ResourceRadarChart
 } from 'webpanel-recharts';
 
 import { api } from '../model/api';
@@ -65,6 +75,15 @@ export const charts = (
               <XAxis dataKey="title" hide={true} />
               <Tooltip />
             </ResourceComposedChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Radar Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceRadarChart resourceCollection={resource}>
+              <PolarGrid />
+              <Radar dataKey={(data: any) => data.title.length} />
+            </ResourceRadarChart>
           </ResponsiveContainer>
         </Card>
       </>

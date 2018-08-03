@@ -8778,7 +8778,7 @@ webpanel-data@0.0.19, webpanel-data@^0.0.19:
 
 "webpanel-recharts@https://github.com/webpanel/recharts.git#develop":
   version "0.0.1"
-  resolved "https://github.com/webpanel/recharts.git#6e358ac1ef5a256dbc9de266af7a28c084705af8"
+  resolved "https://github.com/webpanel/recharts.git#5cc463c0a6dadae3a193ce76a3de6faa4d5daafd"
   dependencies:
     antd "^3.7.3"
     react "^16.4.2"
