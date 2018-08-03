@@ -107,9 +107,13 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash@^4.14.109", "@types/lodash@^4.14.110":
+"@types/lodash@^4.14.109":
   version "4.14.115"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.115.tgz#54d171b2ce12c058742443b5f6754760f701b8f9"
+
+"@types/lodash@^4.14.110":
+  version "4.14.116"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.116.tgz#5ccf215653e3e8c786a58390751033a9adca0eb9"
 
 "@types/node-fetch@^2.1.1":
   version "2.1.2"
@@ -8774,7 +8778,7 @@ webpanel-data@0.0.19, webpanel-data@^0.0.19:
 
 "webpanel-recharts@https://github.com/webpanel/recharts.git#develop":
   version "0.0.1"
-  resolved "https://github.com/webpanel/recharts.git#3faa4293334185aed53e7f8493031ff1704d8de9"
+  resolved "https://github.com/webpanel/recharts.git#6e358ac1ef5a256dbc9de266af7a28c084705af8"
   dependencies:
     antd "^3.7.3"
     react "^16.4.2"
