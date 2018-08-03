@@ -1,8 +1,12 @@
 import { Card } from 'antd';
 import * as React from 'react';
-import { Area, Line, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
+import { Area, Bar, Line, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 import { ResourceCollection, ResourceCollectionLayer } from 'webpanel-data';
-import { ResourceAreaChart, ResourceLineChart } from 'webpanel-recharts';
+import {
+  ResourceAreaChart,
+  ResourceBarChart,
+  ResourceLineChart
+} from 'webpanel-recharts';
 
 import { api } from '../model/api';
 
@@ -29,10 +33,23 @@ export const charts = (
         <Card title="Area Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceAreaChart resourceCollection={resource}>
-              <Area type="step" dataKey={(data: any) => data.title.length} />
+              <Area
+                type="monotone"
+                dataKey={(data: any) => data.title.length}
+              />
               <XAxis dataKey="title" hide={true} />
               <Tooltip />
             </ResourceAreaChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Bar Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceBarChart resourceCollection={resource}>
+              <Bar dataKey={(data: any) => data.title.length} />
+              <XAxis dataKey="title" hide={true} />
+              <Tooltip />
+            </ResourceBarChart>
           </ResponsiveContainer>
         </Card>
       </>
