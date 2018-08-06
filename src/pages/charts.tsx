@@ -3,12 +3,16 @@ import * as React from 'react';
 import {
   Area,
   Bar,
+  CartesianGrid,
   Line,
+  PolarAngleAxis,
   PolarGrid,
+  PolarRadiusAxis,
   Radar,
   ResponsiveContainer,
   Tooltip,
-  XAxis
+  XAxis,
+  YAxis
 } from 'recharts';
 import { ResourceCollection, ResourceCollectionLayer } from 'webpanel-data';
 import {
@@ -21,9 +25,12 @@ import {
 
 import { api } from '../model/api';
 
+const valueDataKey = 'username';
+const getValue = (data: any) => data[valueDataKey].length;
+
 export const charts = (
   <ResourceCollectionLayer
-    name="todos"
+    name="users"
     dataSource={api}
     fields={[]}
     render={(resource: ResourceCollection) => (
@@ -31,12 +38,11 @@ export const charts = (
         <Card title="Line Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceLineChart resourceCollection={resource}>
-              <Line
-                type="monotone"
-                dataKey={(data: any) => data.title.length}
-              />
-              <XAxis dataKey="title" hide={true} />
+              <CartesianGrid strokeDasharray="5" />
+              <XAxis dataKey={valueDataKey} />
+              <YAxis />
               <Tooltip />
+              <Line type="monotone" dataKey={getValue} />
             </ResourceLineChart>
           </ResponsiveContainer>
         </Card>
@@ -44,12 +50,11 @@ export const charts = (
         <Card title="Area Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceAreaChart resourceCollection={resource}>
-              <Area
-                type="monotone"
-                dataKey={(data: any) => data.title.length}
-              />
-              <XAxis dataKey="title" hide={true} />
+              <CartesianGrid strokeDasharray="5" />
+              <XAxis dataKey={valueDataKey} />
+              <YAxis />
               <Tooltip />
+              <Area type="monotone" dataKey={getValue} />
             </ResourceAreaChart>
           </ResponsiveContainer>
         </Card>
@@ -57,9 +62,11 @@ export const charts = (
         <Card title="Bar Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceBarChart resourceCollection={resource}>
-              <Bar dataKey={(data: any) => data.title.length} />
-              <XAxis dataKey="title" hide={true} />
+              <CartesianGrid strokeDasharray="5" />
+              <XAxis dataKey={valueDataKey} />
+              <YAxis />
               <Tooltip />
+              <Bar dataKey={getValue} fill="#49A49D" />
             </ResourceBarChart>
           </ResponsiveContainer>
         </Card>
@@ -67,13 +74,12 @@ export const charts = (
         <Card title="Composed Chart">
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceComposedChart resourceCollection={resource}>
-              <Area
-                type="monotone"
-                dataKey={(data: any) => data.title.length * 2}
-              />
-              <Bar dataKey={(data: any) => data.title.length} />
-              <XAxis dataKey="title" hide={true} />
+              <CartesianGrid strokeDasharray="5" />
+              <XAxis dataKey={valueDataKey} />
+              <YAxis />
               <Tooltip />
+              <Area type="monotone" dataKey={getValue} fill="#EF6F6C" />
+              <Bar dataKey={getValue} fill="#49A49D" />
             </ResourceComposedChart>
           </ResponsiveContainer>
         </Card>
@@ -82,7 +88,12 @@ export const charts = (
           <ResponsiveContainer width="100%" aspect={4}>
             <ResourceRadarChart resourceCollection={resource}>
               <PolarGrid />
-              <Radar dataKey={(data: any) => data.title.length} />
+              <PolarAngleAxis
+                dataKey={valueDataKey}
+                tickFormatter={(value: string) => value}
+              />
+              <PolarRadiusAxis tickFormatter={(value: string) => value} />
+              <Radar dataKey={getValue} fill="#EF6F6C" fillOpacity={0.6} />
             </ResourceRadarChart>
           </ResponsiveContainer>
         </Card>
