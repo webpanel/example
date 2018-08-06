@@ -8764,7 +8764,23 @@ webpanel-auth@0.0.13:
     node-fetch "^2.1.2"
     react "*"
 
-webpanel-data@0.0.19, webpanel-data@^0.0.19:
+webpanel-data@0.0.20:
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/webpanel-data/-/webpanel-data-0.0.20.tgz#a6abeda836d9238fccea9b14f632829d79283ccb"
+  dependencies:
+    "@types/inflection" "^1.5.28"
+    "@types/lodash" "^4.14.110"
+    "@types/node" "^10.3.2"
+    "@types/node-fetch" "^2.1.1"
+    "@types/react" "*"
+    inflection "^1.12.0"
+    lodash "^4.17.10"
+    node-fetch "^2.1.2"
+    querystring "^0.2.0"
+    react "*"
+    url "^0.11.0"
+
+webpanel-data@^0.0.19:
   version "0.0.19"
   resolved "https://registry.yarnpkg.com/webpanel-data/-/webpanel-data-0.0.19.tgz#1f03344d1231db48fe94cbacfc9a054e401203fb"
   dependencies:

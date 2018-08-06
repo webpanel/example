@@ -15,7 +15,7 @@
     "recharts": "^1.1.0",
     "webpanel-antd": "0.0.14",
     "webpanel-auth": "0.0.13",
-    "webpanel-data": "0.0.19",
+    "webpanel-data": "0.0.20",
     "webpanel-recharts": "https://github.com/webpanel/recharts.git#develop"
   },
   "scripts": {

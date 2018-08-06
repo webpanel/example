@@ -34,7 +34,6 @@ export const charts = (
   <ResourceCollectionLayer
     name="users"
     dataSource={api}
-    fields={[]}
     render={(resource: ResourceCollection) => (
       <>
         <Card title="Line Chart">
@@ -106,7 +105,8 @@ export const charts = (
               resourceCollection={resource}
               innerRadius={20}
               outerRadius={140}
-              barSize={10}>
+              barSize={10}
+            >
               <RadialBar dataKey={getValue} background={true} />
             </ResourceRadialBarChart>
           </ResponsiveContainer>
