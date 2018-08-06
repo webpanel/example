@@ -7,18 +7,18 @@ import { users } from './pages/users';
 import { userDetail } from './pages/users-detail';
 
 const layout = (props: AuthContentProps) => (
-  <Layout
-    menu={[
-      <Layout.MenuItem key="/" title="Dashboard" icon="exclamation-circle-o" />,
-      <Layout.MenuItem key="/users/" title="Users" icon="user" />,
+  <Layout logout={props.logout}>
+    <Layout.Menu>
+      <Layout.MenuItem key="/" title="Dashboard" icon="exclamation-circle-o" />
+      <Layout.MenuItem key="/users/" title="Users" icon="user" />
       <Layout.MenuItem key="/charts/" title="Charts" icon="line-chart" />
-    ]}
-    structure={[
+    </Layout.Menu>
+    <Layout.Structure>
       <Layout.StructureItem
         key="/"
         content="Hello world, welcome in demo app."
         name="Dashboard"
-      />,
+      />
       <Layout.StructureItem key="/users" name="Users" content={users} />,
       <Layout.StructureItem
         key="/users/:id"
@@ -26,11 +26,10 @@ const layout = (props: AuthContentProps) => (
           return userDetail(route.match.params.id);
         }}
         name="Users"
-      />,
+      />
       <Layout.StructureItem key="/charts" name="Charts" content={charts} />
-    ]}
-    logout={props.logout}
-  />
+    </Layout.Structure>
+  </Layout>
 );
 
 export const content = (
