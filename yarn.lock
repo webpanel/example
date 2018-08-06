@@ -121,7 +121,11 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^10.3.2":
+"@types/node@*":
+  version "10.5.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.6.tgz#1640f021dd0eaf12e731e54198c12ad2e020dc8e"
+
+"@types/node@^10.3.2":
   version "10.5.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.5.tgz#8e84d24e896cd77b0d4f73df274027e3149ec2ba"
 
@@ -8778,7 +8782,7 @@ webpanel-data@0.0.19, webpanel-data@^0.0.19:
 
 "webpanel-recharts@https://github.com/webpanel/recharts.git#develop":
   version "0.0.1"
-  resolved "https://github.com/webpanel/recharts.git#5cc463c0a6dadae3a193ce76a3de6faa4d5daafd"
+  resolved "https://github.com/webpanel/recharts.git#7be4408b9eebdc4bd45bd4e2202ece81f3dc296a"
   dependencies:
     antd "^3.7.3"
     react "^16.4.2"

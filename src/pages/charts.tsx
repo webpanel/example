@@ -9,6 +9,7 @@ import {
   PolarGrid,
   PolarRadiusAxis,
   Radar,
+  RadialBar,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -20,7 +21,8 @@ import {
   ResourceBarChart,
   ResourceComposedChart,
   ResourceLineChart,
-  ResourceRadarChart
+  ResourceRadarChart,
+  ResourceRadialBarChart
 } from 'webpanel-recharts';
 
 import { api } from '../model/api';
@@ -95,6 +97,18 @@ export const charts = (
               <PolarRadiusAxis tickFormatter={(value: string) => value} />
               <Radar dataKey={getValue} fill="#EF6F6C" fillOpacity={0.6} />
             </ResourceRadarChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Radial Bar Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceRadialBarChart
+              resourceCollection={resource}
+              innerRadius={20}
+              outerRadius={140}
+              barSize={10}>
+              <RadialBar dataKey={getValue} background={true} />
+            </ResourceRadialBarChart>
           </ResponsiveContainer>
         </Card>
       </>
