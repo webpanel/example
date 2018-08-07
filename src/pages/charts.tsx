@@ -26,7 +26,8 @@ import {
   ResourcePieChart,
   ResourceRadarChart,
   ResourceRadialBarChart,
-  ResourceScatterChart
+  ResourceScatterChart,
+  ResourceTreemap
 } from 'webpanel-recharts';
 
 import { api } from '../model/api';
@@ -147,6 +148,17 @@ export const charts = (
                 <Scatter data={data} key="chart" />,
                 <Tooltip key="tooltip" />
               ]}
+            />
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Treemap">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceTreemap
+              resourceCollection={resource}
+              dataKey="id"
+              stroke="#fff"
+              fill="#49A49D"
             />
           </ResponsiveContainer>
         </Card>
