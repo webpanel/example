@@ -12,6 +12,7 @@ import {
   Radar,
   RadialBar,
   ResponsiveContainer,
+  Scatter,
   Tooltip,
   XAxis,
   YAxis
@@ -24,7 +25,8 @@ import {
   ResourceLineChart,
   ResourcePieChart,
   ResourceRadarChart,
-  ResourceRadialBarChart
+  ResourceRadialBarChart,
+  ResourceScatterChart
 } from 'webpanel-recharts';
 
 import { api } from '../model/api';
@@ -128,6 +130,21 @@ export const charts = (
                   fill="#49A49D"
                   key="chart"
                 />,
+                <Tooltip key="tooltip" />
+              ]}
+            />
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Scatter Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceScatterChart
+              resourceCollection={resource}
+              render={(data: object[]) => [
+                <CartesianGrid strokeDasharray="5" key="grid" />,
+                <XAxis dataKey={valueDataKey} key="xaxis" />,
+                <YAxis dataKey={getValue} key="yaxis" />,
+                <Scatter data={data} key="chart" />,
                 <Tooltip key="tooltip" />
               ]}
             />
