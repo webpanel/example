@@ -5,12 +5,14 @@ import {
   Bar,
   CartesianGrid,
   Line,
+  Pie,
   PolarAngleAxis,
   PolarGrid,
   PolarRadiusAxis,
   Radar,
   RadialBar,
   ResponsiveContainer,
+  Scatter,
   Tooltip,
   XAxis,
   YAxis
@@ -21,8 +23,11 @@ import {
   ResourceBarChart,
   ResourceComposedChart,
   ResourceLineChart,
+  ResourcePieChart,
   ResourceRadarChart,
-  ResourceRadialBarChart
+  ResourceRadialBarChart,
+  ResourceScatterChart,
+  ResourceTreemap
 } from 'webpanel-recharts';
 
 import { api } from '../model/api';
@@ -109,6 +114,52 @@ export const charts = (
             >
               <RadialBar dataKey={getValue} background={true} />
             </ResourceRadialBarChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Pie Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourcePieChart
+              resourceCollection={resource}
+              render={(data: object[]) => [
+                <Pie
+                  data={data}
+                  dataKey={getValue}
+                  label={true}
+                  innerRadius="50%"
+                  outerRadius="80%"
+                  fill="#49A49D"
+                  key="chart"
+                />,
+                <Tooltip key="tooltip" />
+              ]}
+            />
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Scatter Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceScatterChart
+              resourceCollection={resource}
+              render={(data: object[]) => [
+                <CartesianGrid strokeDasharray="5" key="grid" />,
+                <XAxis dataKey={valueDataKey} key="xaxis" />,
+                <YAxis dataKey={getValue} key="yaxis" />,
+                <Scatter data={data} key="chart" />,
+                <Tooltip key="tooltip" />
+              ]}
+            />
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Treemap">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourceTreemap
+              resourceCollection={resource}
+              dataKey="id"
+              stroke="#fff"
+              fill="#49A49D"
+            />
           </ResponsiveContainer>
         </Card>
       </>
