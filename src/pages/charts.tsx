@@ -5,6 +5,7 @@ import {
   Bar,
   CartesianGrid,
   Line,
+  Pie,
   PolarAngleAxis,
   PolarGrid,
   PolarRadiusAxis,
@@ -21,6 +22,7 @@ import {
   ResourceBarChart,
   ResourceComposedChart,
   ResourceLineChart,
+  ResourcePieChart,
   ResourceRadarChart,
   ResourceRadialBarChart
 } from 'webpanel-recharts';
@@ -109,6 +111,26 @@ export const charts = (
             >
               <RadialBar dataKey={getValue} background={true} />
             </ResourceRadialBarChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card title="Pie Chart">
+          <ResponsiveContainer width="100%" aspect={4}>
+            <ResourcePieChart
+              resourceCollection={resource}
+              render={(data: object[]) => [
+                <Pie
+                  data={data}
+                  dataKey={getValue}
+                  label={true}
+                  innerRadius="50%"
+                  outerRadius="80%"
+                  fill="#49A49D"
+                  key="chart"
+                />,
+                <Tooltip key="tooltip" />
+              ]}
+            />
           </ResponsiveContainer>
         </Card>
       </>
