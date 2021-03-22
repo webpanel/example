@@ -1,41 +1,31 @@
-import * as React from 'react';
-import { Layout, LoginForm, RouteComponentProps } from 'webpanel-antd';
-import { AuthContentProps, AuthFormProps, DummyAuth } from 'webpanel-auth';
+import "moment/locale/cs";
 
-import { users } from './pages/users';
+import * as React from "react";
 
-const layout = (props: AuthContentProps) => (
-  <Layout
-    menu={[
-      <Layout.MenuItem key="/" title="Dashboard" icon="exclamation-circle-o" />,
-      <Layout.MenuItem key="/users/" title="Users" icon="user" />
-    ]}
-    structure={[
-      <Layout.StructureItem
-        key="/"
-        content="Hello world, welcome in demo app."
-        name="Dashboard"
-      />,
-      <Layout.StructureItem key="/users" name="Users" content={users} />,
-      <Layout.StructureItem
-        key="/users/:id"
-        content={(route: RouteComponentProps<any>) => {
-          return `This is detail page for user ${route.match.params.id}`;
-        }}
-        name="Users"
-      />
-    ]}
-    logout={props.logout}
-  />
-);
+import { AdminLayout } from "webpanel-admin";
+import { entities } from "./model";
 
-export const content = (
-  <DummyAuth
-    username="demo"
-    password="demo"
-    content={layout}
-    form={(props: AuthFormProps) => {
-      return <LoginForm authorizationInfo={props} />;
-    }}
-  />
-);
+export const App = () => {
+  return (
+    <AdminLayout
+      logout={() => {
+        // do logout
+      }}
+      // auth={{
+      //   type: "oauth",
+      //   oauthTokenURL: ENV.REACT_APP_TOKEN_URL,
+      //   clientId: ENV.REACT_APP_CLIENT_ID,
+      //   clientSecret: ENV.REACT_APP_CLIENT_SECRET,
+      //   scope: ENV.REACT_APP_SCOPE,
+      //   userNameGetter: (session: AuthSession) => {
+      //     const payload = session.getTokenPayload();
+      //     return payload && payload.user && payload.user.username;
+      //   },
+      // }}
+      logoURL="/logo-wide.png"
+      logoCollapsedURL="/logo.png"
+      menu={{ theme: "dark" }}
+      entities={() => entities}
+    />
+  );
+};

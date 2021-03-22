@@ -4,6 +4,8 @@
     "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
   },
   "rules": {
-    "jsx-no-lambda": false
+    "ordered-imports": [false],
+    "jsx-no-lambda": false,
+    "object-literal-sort-keys": [false, "shorthand-first"]
   }
 }

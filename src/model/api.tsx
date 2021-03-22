@@ -1,25 +1,13 @@
 import {
   DataSource,
-  ResourceCollectionResponse,
-  ResponseDataTransformer,
-  RestConnector as Connector
+  ResponseDataTransformer
 } from 'webpanel-data';
 
-class CustomTransformer extends ResponseDataTransformer {
-  public async list(data: any): Promise<ResourceCollectionResponse> {
-    return {
-      count: data.length,
-      items: data
-    };
-  }
-}
+import { GraphQLORMConnector as Connector } from 'graphql-orm-connetor';
+import { ENV } from '../env';
 
 const connector = new Connector({
-  responseDataTransformer: new CustomTransformer()
+  responseDataTransformer: new ResponseDataTransformer()
 });
 
-export const api = new DataSource(
-  'api',
-  connector,
-  'https://jsonplaceholder.typicode.com/'
-);
+export const api = new DataSource('api', connector, ENV.REACT_APP_API_URL);
