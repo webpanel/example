@@ -13,5 +13,6 @@ export let task = new Entity({
   .relationshipField("user", {
     targetEntity: () => user,
     type: "toOne",
+    render: (values) => values.user,
   })
   .setRender((values) => values.user.firstName);
