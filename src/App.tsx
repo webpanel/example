@@ -5,7 +5,7 @@ import * as React from "react";
 import { AdminLayout } from "webpanel-admin";
 import { entities } from "./model";
 
-export const App = () => {
+const App = () => {
   return (
     <AdminLayout
       logout={() => {
@@ -18,3 +18,5 @@ export const App = () => {
     />
   );
 };
+
+export default App;
