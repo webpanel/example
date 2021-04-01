@@ -2,7 +2,7 @@
 
 import { Entity } from "webpanel-admin";
 import { api } from "./api";
-import { task } from "./task";
+import { todo } from "./todo";
 
 export let user = new Entity({
   name: "User",
@@ -13,7 +13,7 @@ export let user = new Entity({
   .stringField("lastName")
   .fileField("file", {})
   .relationshipField("tasks", {
-    targetEntity: () => task,
+    targetEntity: () => todo,
     type: "toMany",
   })
   .setRender((values) => values.file);

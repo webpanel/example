@@ -4,8 +4,8 @@ import { Entity } from "webpanel-admin";
 import { api } from "./api";
 import { user } from "./user";
 
-export let task = new Entity({
-  name: "Task",
+export let todo = new Entity({
+  name: "Todo",
   dataSource: api,
 })
   .stringField("title")
