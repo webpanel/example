@@ -2,18 +2,11 @@
 
 import { Entity } from "webpanel-admin";
 import { api } from "./api";
-import { todo } from "./todo";
 
 export let user = new Entity({
   name: "User",
   dataSource: api,
 })
   .stringField("email")
-  .stringField("firstName")
-  .stringField("lastName")
-  .fileField("file", {})
-  .relationshipField("tasks", {
-    targetEntity: () => todo,
-    type: "toMany",
-  })
-  .setRender((values) => values.file);
+  .stringField("name")
+  .setRender((values) => values.name);

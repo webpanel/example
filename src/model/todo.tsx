@@ -15,4 +15,4 @@ export let todo = new Entity({
     type: "toOne",
     render: (values) => values.user,
   })
-  .setRender((values) => values.user.firstName);
+  .setRender((values) => values.user.name);
