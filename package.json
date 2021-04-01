@@ -19,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts-ts": "^3.1.0",
     "sw-precache-cra": "^1.0.0-alpha.2",
-    "webpanel-admin": "git+https://github.com/webpanel/admin.git#a87de60",
+    "webpanel-admin": "github:webpanel/admin#a87de60",
     "webpanel-antd": "^0.2.10",
     "webpanel-data": "^0.2.9",
     "webpanel-i18n": "^0.1.0"
