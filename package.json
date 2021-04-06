@@ -19,8 +19,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts-ts": "^3.1.0",
     "sw-precache-cra": "^1.0.0-alpha.2",
-    "webpanel-admin": "github:webpanel/admin#a87de60",
-    "webpanel-antd": "^0.2.10",
+    "webpanel-admin": "^0.2.28",
+    "webpanel-antd": "^0.2.11",
     "webpanel-data": "^0.2.9",
     "webpanel-i18n": "^0.1.0"
   },
